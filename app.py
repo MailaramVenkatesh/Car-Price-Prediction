@@ -29,7 +29,7 @@ def predict():
 
             predit = mlmodel.predict([[make_encode,model_encode,float(year),float(Engine_HP),float(Engine_Cylinders)]])
 
-            return render_template('predicted.html',predicted_value=predit[0])
+            return render_template('Predicted.html',predicted_value=predit[0])
         
 
         else:
